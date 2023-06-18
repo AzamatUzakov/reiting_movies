@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie DB</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap&subset=cyrillic-ext"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__search">
+            <form action="#">
+                <input type="text" placeholder="Поиск" id="searchInput">
+            </form>
+        </div>
+        <div class="header__logo">
+            <img src="icons/Logotype.svg" alt="logo">
+        </div>
+    </header>
+    <main class="promo">
+        <div class="promo__menu">
+            <nav class="promo__menu-list">
+                <ul>
+                    <!--    <li><a class="promo__menu-item promo__menu-item_active" href="#">Фильмы</a></li>
+                    <li><a class="promo__menu-item" href="#">Сериалы</a></li>
+                    <li><a class="promo__menu-item" href="#">Мультфильмы</a></li>
+                    <li><a class="promo__menu-item" href="#">Клипы</a></li>
+                    <li><a class="promo__menu-item" href="#">Трейлеры</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        <div class="promo__content">
+            <div class="promo__bg">
+                <div class="promo__genre">КОМЕДИЯ</div>
+                <div class="promo__title">МАРСИАНИН</div>
+                <div class="promo__descr">ИСТОРИЯ ЧЕЛОВЕКА, ВЫЖИВШЕГО НА ЧУЖОЙ ПЛАНЕТЕ В ОДИНОЧКУ</div>
+                <div class="promo__ratings">
+                    <span class="IMBd">IMDb: 8.0</span>
+                    <span class="kinopoisk">Кинопоиск: 7.7</span>
+                </div>
+            </div>
+            <div class="promo__interactive">
+                <div>
+                    <div class="promo__interactive-title">ПРОСМОТРЕННЫЕ ФИЛЬМЫ</div>
+                    <ul class="promo__interactive-list">
+                        <!-- <li class="promo__interactive-list">ЛОГАН
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ЛИГА СПРАВЕДЛИВОСТИ
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ЛА-ЛА ЛЭНД
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">ОДЕРЖИМОСТЬ
+                            <div class="delete"></div>
+                        </li>
+                        <li class="promo__interactive-item">СКОТТ ПИЛИГРИМ ПРОТИВ...
+                            <div class="delete"></div>
+                        </li> -->
+                    </ul>
+                </div>
+                <div>
+                    <form class="add">
+                        <div class="promo__interactive-title">ДОБАВИТЬ НОВЫЙ ФИЛЬМ</div>
+                        <span>Введите название фильма</span>
+                        <input class="adding__input" type="text" placeholder="Что уже посмотрено...?">
+                        <span>Сделать его любимым?</span>
+                        <input type="checkbox">
+                        <span class="yes">Да!</span>
+                        <button>Подтвердить</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="promo__adv">
+            <div class="promo__adv-title">Реклама от спонсоров</div>
+            <img src="img/content_1.jpg" alt="some picture">
+            <img src="img/content_2.jpg" alt="some picture">
+            <img src="img/content_3.png" alt="some picture">
+        </div>
+    </main>
+
+    <!-- 
+    <div class="dots_modal">
+        <img width="30px" class="basket" src= alt="">
+        <img width="30px" class="edit" src="img/edit.svg" alt="">
+    </div> -->
+
+    <div class="modal_bg">
+
+      <!--   <div class="stars data-total-value='0' ">
+            <div class="stars_item data-item-value='10' ">★</div>
+            <div class="stars_item data-item-value='9' ">★</div>
+            <div class="stars_item data-item-value='8' ">★</div>
+            <div class="stars_item data-item-value='7' ">★</div>
+            <div class="stars_item data-item-value='6' ">★</div>
+            <div class="stars_item data-item-value='5' ">★</div>
+            <div class="stars_item data-item-value='4' ">★</div>
+            <div class="stars_item data-item-value='3' ">★</div>
+            <div class="stars_item data-item-value='2' ">★</div>
+            <div class="stars_item data-item-value='1' ">★</div>
+        </div> -->
+
+        <div class="form_item">
+            <div class="rating rating_set">
+                <div class="rating__body">
+                    <div class="rating__active"></div>
+                    <div class="rating_items">
+                        <input type="radio" class="rating__item" value="1" name="rating">
+                        <input type="radio" class="rating__item" value="2" name="rating">
+                        <input type="radio" class="rating__item" value="3" name="rating">
+                        <input type="radio" class="rating__item" value="4" name="rating">
+                        <input type="radio" class="rating__item" value="5" name="rating">
+                        <input type="radio" class="rating__item" value="6" name="rating">
+                        <input type="radio" class="rating__item" value="7" name="rating">
+                        <input type="radio" class="rating__item" value="8" name="rating">
+                        <input type="radio" class="rating__item" value="9" name="rating">
+                        <input type="radio" class="rating__item" value="10" name="rating">
+                    
+                    </div>
+                </div>
+                <div class="rating_value">8.0</div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="img"></div>
+            <div class="block">
+                <p class="n" id="hh"> one</p>
+                <p class="n" id="relased">two</p>
+                <p class="n" id="runtime">three</p>
+                <p class="n" id="genre">four</p>
+                <p class="n" id="director">five</p>
+                <p class="n" id="launguage">six</p>
+                <p class="n" id="country">seven</p>
+
+            </div>
+        </div>
+        <p id="name">nomash</p>
+    </div>
+
+    <div class="close">x</div>
+
+
+    <script type="module" src="js/script.js"></script>
+
+</body>
+
+</html>
